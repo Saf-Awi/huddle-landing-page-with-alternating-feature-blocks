@@ -1,0 +1,300 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+:root {
+    --primary-clr-Pink: hsl(322, 100%, 66%);
+    --neutral-clr-Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --neutral-clr-Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --neutral-clr-Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+/* ----------------Desktop View----------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--neutral-clr-Grayish-Blue);
+    
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: var(--neutral-clr-Very-Dark-Cyan);
+}
+
+
+/* ----------------header content----------------- */
+header {
+    padding: 30px;
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-color: var(--neutral-clr-Very-Pale-Cyan);
+}
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.bottom-header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.illustration-mockups {
+    width: 600px;
+}
+
+.build-community-p {
+    color: var(--neutral-clr-Very-Dark-Cyan);
+}
+
+.build-community-top-div {
+    width: 600px;
+    margin-right: 30px;
+}
+
+.try-it-top-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.get-started-btn {
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--primary-clr-Pink);
+    color: var(--neutral-clr-Very-Pale-Cyan);
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.get-started-btn:hover {
+    background-color: hsla(322, 100%, 66%, 0.503);
+}
+/* ----------------main content----------------- */
+
+main {
+    padding: 50px;
+}
+
+.section-image, .section-image-content {
+    width: 500px;
+}
+
+.section-content {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+    border-radius: 12px;
+    padding: 10px;
+    
+    
+    
+}
+
+.section-text-content {
+    width: 500px;
+    margin-top: 100px;
+}
+
+.build-community-bottom-div {
+    text-align: center;
+    width: 700px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-top: 60px;
+    border-radius: 12px;
+    position: relative;
+    left: 220px;
+    top: 120px;
+    z-index: 1;
+    background-color: white;
+    
+
+}
+
+
+/* ----------------footer content----------------- */
+
+footer {
+    background-color: var(--neutral-clr-Very-Dark-Cyan);
+    padding: 50px;
+}
+
+.huddle-logo-footer path{
+    fill: var(--neutral-clr-Very-Pale-Cyan);
+}
+
+.huddle-logo-footer {
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    font-size: 14px;
+    margin-top: 100px;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    fill: var(--neutral-clr-Very-Pale-Cyan);
+    margin-right: 10px;
+}
+
+.social:hover {
+    fill: var(--primary-clr-Pink);
+}
+
+.nav-bottom {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 90px;
+}
+
+.nav-left {
+    margin-left: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutral-clr-Very-Pale-Cyan);
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.email-phone-section {
+    width: 370px;
+    line-height: 1.8;
+}
+
+.location-icon, .phone-icon, .email-icon {
+    margin-right: 20px;
+}
+
+.socials-copyright {
+   position: relative;
+   left: 100px;
+   top: 100px;
+    
+}
+
+.copyright {
+    margin-top: 140px;
+}
+
+/* ----------------Mobile View----------------- */
+
+@media screen and (max-width: 768px) {
+    header {
+        background-image: url(images/bg-hero-mobile.svg);
+    }
+
+    .illustration-mockups {
+        width: 400px;
+    }
+
+    .build-community-top-div {
+        width: 400px;
+    }
+
+    .huddle-logo {
+        width: 120px;
+        
+    }
+
+    .try-it-top-btn {
+        width: 120px;
+        font-size: 12px;
+        margin-right: 0;
+    }
+
+    .bottom-header {
+        flex-direction: column-reverse;
+        text-align: center;
+        font-weight: 400;
+        
+    }
+
+    .get-started-btn {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .section-image, .section-image-content {
+        width: 300px;
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+
+    .section-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 0;
+    }
+
+    .flowing-conversations-section {
+        flex-direction: column;
+
+    }
+
+    .section-text-content {
+        width: 280px;
+        margin-left: 30px;
+    }
+
+    .build-community-bottom-div  {
+        width: 350px;
+        position: relative;
+        left: -20px;
+        font-size: 15px;
+        
+    }
+
+    .footer-content, .nav-bottom {
+        flex-direction: column;
+    }
+
+    .nav-bottom, .nav-left {
+        margin: 0;
+    }
+
+    .socials {
+       margin-top: 30px;
+    }
+
+    .socials-copyright {
+        text-align: center;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .copyright {
+        margin-top: 10px;
+    }
+}
